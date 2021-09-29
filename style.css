@@ -1,0 +1,164 @@
+:root{
+    --blue: #458efe;
+    --green: #32cb76;
+    --red: #f85f60;
+    --cryan: #15cfe0;
+    --purple: #8073e4;
+    --lightBlue: #dae8ff;
+    --lightGreen: #c9f2db;
+    --lightRed: #fedfdf;
+    --lightCryan: #d0f5f9;
+    --lightpurple: #e6e3fa;
+    --white: #ffffff
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    font-family: "Urbanist" , "Sans-serif";
+}
+
+.buttonGroup{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin: 0.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.row1 {
+    padding: 2.3rem 5rem;
+    border: 2px solid var(--blue);
+  }
+
+.row2{
+    padding: 2rem 4rem;
+    border: 2px solid var(--green);
+}
+
+.row3{
+    padding: 1.9rem 5rem;
+    border: 2px solid var(--red);
+}
+
+.row4{
+    padding: 1.8rem 4rem;
+    border: 2px solid var(--cryan);
+}
+
+.row5 {
+    padding: 1.7rem 3rem;
+    border: 2px solid var(--purple);
+  }
+
+.col1 , .col4{
+    color: var(--white);
+}
+
+.row1.col2,
+.col3.row1{
+    color: var(--blue);
+}
+
+.col1.row1{
+    background-color: var(--blue);
+}
+
+.col1.row2{
+    background-color: var(--green);
+}
+
+.col1.row3{
+    background-color: var(--red);
+}
+
+.col1.row4{
+    background-color: var(--cryan);
+}
+
+.col1.row5{
+    background-color: var(--purple);
+}
+
+.col2.row1{
+    background-color: var(--lightBlue);
+}
+
+.col2.row2{
+    background-color: var(--lightGreen);
+}
+
+.col2.row3{
+    background-color: var(--lightRed);
+}
+
+.col2.row4{
+    background-color: var(--lightCryan);
+}
+
+.col2.row5{
+    background-color: var(--lightpurple);
+}
+
+.col3{
+    background-color: transparent;
+}
+
+.col4{
+    border: transparent;
+}
+
+.col4.row1{
+    background: linear-gradient(to right , var(--blue) , var(--lightBlue) );
+}
+
+.col4.row2{
+    background: linear-gradient(to right , #32cb76 , #c9f2db);
+}
+
+.col4.row3{
+    background: linear-gradient(to right , #f85f60 , #fedfdf );
+}
+
+.col4.row4{
+    background: linear-gradient(to right , #15cfe0 , #d0f5f9 );
+}
+
+.col4.row5{
+    background: linear-gradient(to right , #8073e4 , #e6e3fa );
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.col1:hover,
+.col2:hover,
+.col4:hover{
+    filter: brightness(110%);
+}
+
+.col3:hover{
+    filter: brightness(70%);
+}
